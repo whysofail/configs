@@ -1,0 +1,25 @@
+[alias]
+	st = status -sb
+	co = checkout
+	br = branch
+	ci = commit
+	ca = commit --amend
+	cl = clean -fd
+	last = log -1 HEAD
+	unstage = reset HEAD --
+	d = diff
+	dc = diff --cached
+	l = log --oneline --graph --all
+	ll = log --stat
+	mg = merge
+	mt = mergetool
+	rs = restore
+	rst = reset
+	ft = !git fetch --all && git pull --rebase --autostash
+	sw = switch
+	rb = rebase
+	unp = cherry-pick -n
+	pushf = push --force-with-lease
+	ls = log --oneline --decorate --all --graph
+	aa = !git add . && git status
+	acp = "!f() { git add . && git commit -m \"$1\" && git push; }; f"
